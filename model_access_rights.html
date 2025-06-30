@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta content="About BioModels" about="https://wwwdev.ebi.ac.uk/biomodels" property="dc:title"> <meta name="ebi:localmasthead-color" content="#254146"> <meta name="ebi:localmasthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/images/backgrounds/embl-ebi-background.jpg"/> <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch --> <link rel="dns-prefetch" href="//embl.de" /> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css"> <link rel="stylesheet" type="text/css" href="./css/biomodels/biomodels.css"> <link rel="stylesheet" type="text/css" href="./css/lightbox.css" > <title>BioModels Help</title> </head> <body> <div id="wrapper" class="container_24 page"> <div id="mainframe"> <div data-sticky-container class="sticky-container" > <div id="local-masthead" data-sticky data-sticky-on="large" data-top-anchor="165.75" data-btm-anchor="300000" class="sticky meta-background-color meta-background-image" data-resize="local-masthead" data-events="resize"> <header> <div class="masthead row"> <!-- local-title --> <div id="local-title" class="columns medium-12"> <div class="row" style="margin-top: -25px"> <div class="small-12 medium-6 large-6"> <h1> <a href="manual.html" title="Back to BioModels homepage"> <img src="./img/biomodels/logo_small.png" title="BioModels Homepage"/> <span style="color: #ffffff">BioModels</span> <sup><span class="icon icon-generic" data-icon=">"></span></sup></a> </h1> </div> </div> </div> </div> </header> </div> </div> <div id="maincontent" class="row"> <div class="small-12 medium-12 large-12 columns">
+<p>Models <a href="model_submission.html">submitted</a> by users are initially available only to them and to users with additional access rights such as administrators. A model can be refined over time by its contributors, through the <a href="model_update.html">update process</a>. Users can choose to <a href="model_publish.html">publish</a> a version of a model, which must be the latest version of the model at the time of publishing. Users with access rights viewing the model would be able to see all versions of the model, while other users (whether logged-in or anonymous) would only be able to view the published versions.</p> <p><a class="screenshot" href="img/biomodels/model_history.png"><img alt="Model Update and Publish History" src="img/biomodels/model_history.png" /></a></p> <p>An example of this is shown below, where a model has four versions. A user with access rights to the model is able to see all four versions in the history tab, and is able to view each of them. Other users will only see the published versions of the model.</p> <h3>A model with two public versions, as seen by users with access rights</h3> <p><a class="screenshot" href="img/biomodels/privaterevs.png"><img alt="A model with public and private revisions, seen by a user with access rights" src="img/biomodels/privaterevs.png" /></a></p> <h3>The model as viewed by other users</h3> <p><a class="screenshot" href="img/biomodels/publicrevs.png"><img alt="A model with public and private revisions, seen by users without private access rights" src="img/biomodels/publicrevs.png" /></a></p>
+            </div><!-- columns -->
+        </div><!-- maincontent -->
+
+        <footer>
+            <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+            <div id="local-footer">
+                <div class="row">
+                    <div class="small-12 medium-12 large-6 columns">
+                        Copyright &copy; <a href="//www.ebi.ac.uk/biomodels">BioModels</a>&nbsp;<script>document.write(new Date().getFullYear());</script>, all rights reserved.
+                    </div>
+                </div>
+            </div>
+            <!-- End optional local footer -->
+
+            <div id="global-footer">
+                <nav id="global-nav-expanded" class="row">
+                    <!-- Footer will be automatically inserted by footer.js -->
+                </nav>
+                <section id="ebi-footer-meta" class="row">
+                    <!-- Footer meta will be automatically inserted by footer.js -->
+                </section>
+            </div>
+        </footer>
+        </div> <!--! end of #wrapper -->
+    
+
+</div><!-- mainframe -->
+</div><!-- wrapper -->
+    <!-- declaration of javascript, jQuery being used -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true // default value
+        });
+        $(document).ready(function () {
+            $(".screenshot").each(function (i, obj) {
+                $(obj).attr("data-lightbox", "testPreview");
+            });
+        });
+    </script>
+</body>
+</html>

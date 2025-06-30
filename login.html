@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="About BioModels" about="https://www.ebi.ac.uk/biomodels" property="dc:title">
+    <meta name="ebi:localmasthead-color" content="#254146">
+    <meta name="ebi:localmasthead-image"
+          content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/images/backgrounds/embl-ebi-background.jpg"/>
+    <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch -->
+    <link rel="dns-prefetch" href="//embl.de"/>
+    <link rel="stylesheet" type="text/css"
+          href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css">
+    <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css">
+    <link rel="stylesheet" type="text/css"
+          href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css">
+    <link rel="stylesheet" type="text/css" href="./css/biomodels/biomodels.css">
+    <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
+    <title>BioModels Help</title></head>
+<body>
+<div id="wrapper" class="container_24 page">
+    <div id="mainframe">
+        <div data-sticky-container class="sticky-container">
+            <div id="local-masthead" data-sticky data-sticky-on="large" data-top-anchor="165.75"
+                 data-btm-anchor="300000" class="sticky meta-background-color meta-background-image"
+                 data-resize="local-masthead" data-events="resize">
+                <header>
+                    <div class="masthead row"> <!-- local-title -->
+                        <div id="local-title" class="columns medium-12">
+                            <div class="row" style="margin-top: -25px">
+                                <div class="small-12 medium-6 large-6"><h1><a href="manual.html"
+                                                                              title="Back to BioModels homepage"> <img
+                                        src="./img/biomodels/logo_small.png" title="BioModels Homepage"/> <span
+                                        style="color: #ffffff">BioModels</span> <sup><span class="icon icon-generic"
+                                                                                           data-icon=">"></span></sup></a>
+                                </h1></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div id="maincontent" class="row">
+            <div class="small-12 medium-12 large-12 columns">
+                <p>Users have read and update rights to models they have submitted. Additionally, it is possible to be
+                    granted read- or update rights to models submitted by other users.</p>
+                <p>Users with admin rights have read and update access to all models. They can also create new users or
+                    edit existing accounts, edit the text on certain pages, including the landing page, and regenerate
+                    the search index.</p>
+                <h2>Registration</h2>
+                <p>Users can be registered either by administrators directly, or by clicking the registration link at
+                    the top of the page. This leads to a registration form, which captures basic information about the
+                    user. It is required that the email and the username are unique. The Institution and ORCID fields
+                    are optional. A captcha verification mechanism seeks to prevent spam accounts. If the details are
+                    validated, then an account is created in the system and a message is sent to the email provided,
+                    with the password. This mechanism helps ensure that the email provided during registration is valid.
+                    The password can be changed by the user from their <a href="user_profiles.html">profile page</a>.
+                </p>
+                <h2>Login</h2>
+                <p>The model repository allows unauthenticated access to models that have been published. These will be
+                    the models returned in search query and the browse models pages. To access unpublished models, and
+                    to submit and update models, it is necessary to log in. Clicking on the login link at the top right
+                    takes the user to the form below, which registered users can use to log in. If the user forgets
+                    their login credentials, they can click on 'Forgot Password'.</p>
+                <h3>Login page</h3>
+                <p><a class="screenshot" href="img/biomodels/login.png"><img alt="Login page"
+                                                                             src="img/biomodels/login.png"/></a></p>
+                <h2>Recovering passwords</h2>
+                <p>If the user clicks on forgot password, they are directed to a form that asks their username. An
+                    email
+                    is sent to the account associated with the specified username (if it exists). The email contains a
+                    link embedded with a unique hash that is valid only for 24 hours. When BioModels serves this page,
+                    it checks the hash provided against the one stored in the database for the user. If this is valid,
+                    then the user is allowed to change their password, as shown in the image below.</p>
+                <h3>Reset password page</h3>
+                <p><a class="screenshot" href="img/biomodels/passwordreset.png"><img alt="Password reset page"
+                                                                                     src="img/biomodels/passwordreset.png"/></a>
+                </p>
+            </div><!-- columns -->
+        </div><!-- maincontent -->
+
+        <footer>
+            <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+            <div id="local-footer">
+                <div class="row">
+                    <div class="small-12 medium-12 large-6 columns">
+                        Copyright &copy; <a href="//www.ebi.ac.uk/biomodels">BioModels</a>&nbsp;<script>document.write(new Date().getFullYear());</script>
+                        , all rights reserved.
+                    </div>
+                </div>
+            </div>
+            <!-- End optional local footer -->
+
+            <div id="global-footer">
+                <nav id="global-nav-expanded" class="row">
+                    <!-- Footer will be automatically inserted by footer.js -->
+                </nav>
+                <section id="ebi-footer-meta" class="row">
+                    <!-- Footer meta will be automatically inserted by footer.js -->
+                </section>
+            </div>
+        </footer>
+    </div> <!--! end of #wrapper -->
+
+
+</div><!-- mainframe -->
+</div><!-- wrapper -->
+<!-- declaration of javascript, jQuery being used -->
+<script src="./js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+        'fitImagesInViewport': true // default value
+    });
+    $(document).ready(function () {
+        $(".screenshot").each(function (i, obj) {
+            $(obj).attr("data-lightbox", "testPreview");
+        });
+    });
+</script>
+</body>
+</html>

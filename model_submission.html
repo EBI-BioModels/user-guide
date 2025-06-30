@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta content="About BioModels" about="https://wwwdev.ebi.ac.uk/biomodels" property="dc:title"> <meta name="ebi:localmasthead-color" content="#254146"> <meta name="ebi:localmasthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/images/backgrounds/embl-ebi-background.jpg"/> <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch --> <link rel="dns-prefetch" href="//embl.de" /> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css"> <link rel="stylesheet" type="text/css" href="./css/biomodels/biomodels.css"> <link rel="stylesheet" type="text/css" href="./css/lightbox.css" > <title>BioModels Help</title> </head> <body> <div id="wrapper" class="container_24 page"> <div id="mainframe"> <div data-sticky-container class="sticky-container" > <div id="local-masthead" data-sticky data-sticky-on="large" data-top-anchor="165.75" data-btm-anchor="300000" class="sticky meta-background-color meta-background-image" data-resize="local-masthead" data-events="resize"> <header> <div class="masthead row"> <!-- local-title --> <div id="local-title" class="columns medium-12"> <div class="row" style="margin-top: -25px"> <div class="small-12 medium-6 large-6"> <h1> <a href="manual.html" title="Back to BioModels homepage"> <img src="./img/biomodels/logo_small.png" title="BioModels Homepage"/> <span style="color: #ffffff">BioModels</span> <sup><span class="icon icon-generic" data-icon=">"></span></sup></a> </h1> </div> </div> </div> </div> </header> </div> </div> <div id="maincontent" class="row"> <div class="small-12 medium-12 large-12 columns">
+<p>Models can be submitted by registered users. The submission process can be initiated by clicking on 'Submit'. This takes the user to a guidelines page, with information related to the format and format version supported. If a model is not handled by any of the plugins supported by jummp, the model is stored in the BioModels as an 'unknown' format. The submission process can be stopped at any point by clicking on the 'abort' button.</p> <p><a class="screenshot" href="img/biomodels/submission_guidelines.png" title="Submission Guidelines"><img alt="Submission Guidelines" src="img/biomodels/submission_guidelines.png" title="Submission Guidelines" /></a></p> <p>When continue is clicked, the user is taken to the file upload step. Users can upload 'main' files, which define the model, and 'supplementary' files, which provide information related to it. Examples include code written to demonstrate the model or text describing the model in more detail. Clicking on 'Add a supplementary file' creates a file upload box and an associated text box where a description can be optionally entered. It is not necessary to create as many boxes as needed, any unused file upload boxes are ignored. It is however necessary to provide at least one main file. If this is not provided the user is brought back to the upload page with an error message. When continue is clicked, the format of the model is detected. The model is validated according to it's format. Models failing validation are labelled invalid, however can still be submitted.</p> <p><a class="screenshot" href="img/biomodels/submission_uploadfiles.png" title="Upload Files"><img alt="Upload Files" src="img/biomodels/submission_uploadfiles.png" title="Upload Files" /></a></p> <p>Information is extracted from the model, and is displayed when the user clicks upload files. This includes the name and description of the model, and may include the option of editing the model in later versions. In the next step the user is asked to provide a publication link. This can be skipped by leaving the boxes blank. A number of different link types can be provided (such as pubmed, doi, isbn etc). Each of these known types are validated against a pattern stored for their links. If an invalid link is provided an error message is shown and the user is asked to supply a correct link.</p> <p><a class="screenshot" href="img/biomodels/submission_enterpublink.png" title="Model publication link"><img alt="Model publication link" src="img/biomodels/submission_enterpublink.png" title="Model publication link" /></a></p> <p>If the user supplies a pubmed link, the publication is retrieved using the <a href="http://europepmc.org/RestfulWebService">Europe PMC web service</a>. If an existing publication link is provided, the details are retrieved from the database. The user is then directed to a form that allows editing of any data retrieved based on the link.</p> <p><a class="screenshot" href="img/biomodels/submission_updatepubinfo.png" title="Publication details page"><img alt="Publication details page" src="img/biomodels/submission_updatepubinfo.png" title="Publication details page" /></a></p> <p>Finally, before submission, a submission summary is shown to the user.</p> <p><a class="screenshot" href="img/biomodels/submission_summary.png" title="Submission Summary"><img alt="Submission Summary" src="img/biomodels/submission_summary.png" title="Submission Summary" /></a></p> <p>It is possible until this point to go back and forth in the process until the model is finally submitted. For instance, the user can go back to the upload files page and add more files. Files already uploaded are stored on the server and do not need to be uploaded again. It is possible to remove and replace files already uploaded to the server.</p> <p>When the user finally submits the model by clicking 'Complete Submission' on the summary page, the files are moved from temporary storage into the repository, and a new model is generated with a unique id. A link to the model is provided in the confirmation page.</p> <p><a class="screenshot" href="img/biomodels/submission_created.png" title="Created"><img alt="Created" src="img/biomodels/submission_created.png" title="Created" /></a></p>
+            </div><!-- columns -->
+        </div><!-- maincontent -->
+
+        <footer>
+            <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+            <div id="local-footer">
+                <div class="row">
+                    <div class="small-12 medium-12 large-6 columns">
+                        Copyright &copy; <a href="//www.ebi.ac.uk/biomodels">BioModels</a>&nbsp;<script>document.write(new Date().getFullYear());</script>, all rights reserved.
+                    </div>
+                </div>
+            </div>
+            <!-- End optional local footer -->
+
+            <div id="global-footer">
+                <nav id="global-nav-expanded" class="row">
+                    <!-- Footer will be automatically inserted by footer.js -->
+                </nav>
+                <section id="ebi-footer-meta" class="row">
+                    <!-- Footer meta will be automatically inserted by footer.js -->
+                </section>
+            </div>
+        </footer>
+        </div> <!--! end of #wrapper -->
+    
+
+</div><!-- mainframe -->
+</div><!-- wrapper -->
+    <!-- declaration of javascript, jQuery being used -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true // default value
+        });
+        $(document).ready(function () {
+            $(".screenshot").each(function (i, obj) {
+                $(obj).attr("data-lightbox", "testPreview");
+            });
+        });
+    </script>
+</body>
+</html>

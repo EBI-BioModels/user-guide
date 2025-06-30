@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta content="About BioModels" about="https://wwwdev.ebi.ac.uk/biomodels" property="dc:title"> <meta name="ebi:localmasthead-color" content="#254146"> <meta name="ebi:localmasthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/images/backgrounds/embl-ebi-background.jpg"/> <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch --> <link rel="dns-prefetch" href="//embl.de" /> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css"> <link rel="stylesheet" type="text/css" href="./css/biomodels/biomodels.css"> <link rel="stylesheet" type="text/css" href="./css/lightbox.css" > <title>BioModels Help</title> </head> <body> <div id="wrapper" class="container_24 page"> <div id="mainframe"> <div data-sticky-container class="sticky-container" > <div id="local-masthead" data-sticky data-sticky-on="large" data-top-anchor="165.75" data-btm-anchor="300000" class="sticky meta-background-color meta-background-image" data-resize="local-masthead" data-events="resize"> <header> <div class="masthead row"> <!-- local-title --> <div id="local-title" class="columns medium-12"> <div class="row" style="margin-top: -25px"> <div class="small-12 medium-6 large-6"> <h1> <a href="manual.html" title="Back to BioModels homepage"> <img src="./img/biomodels/logo_small.png" title="BioModels Homepage"/> <span style="color: #ffffff">BioModels</span> <sup><span class="icon icon-generic" data-icon=">"></span></sup></a> </h1> </div> </div> </div> </div> </header> </div> </div> <div id="maincontent" class="row"> <div class="small-12 medium-12 large-12 columns">
+<p>One facility to assist in <a href="model_sharing.html">model sharing</a> is the creation of teams, which allow the grouping of users. Users may often need to share with a set of users repeatedly, for whom a team can be created. Clicking on 'My Teams' takes a user to a list of teams accessible to them. This comprises of two types of teams, teams created by the user themselves, and teams including the user created by other users. The teams page is shown below.</p> <p><a class="screenshot" href="img/biomodels/teamsPage.png" title="View teams"><img alt="View teams" src="img/biomodels/teamsPage.png" title="View teams" /></a></p> <p>Clicking on create team takes users to a form where the name, description and membership of the team can be specified. Similar to the autocomplete on the <a href="model_sharing.html">model sharing</a> page, the users can be searched by their name, email or username.</p> <p><a class="screenshot" href="img/biomodels/teamCreate.png" title="Create a team"><img alt="Create a team" src="img/biomodels/teamCreate.png" title="Create a team" /></a></p> <p>Teams available to users are shown in a dropdown box on the model sharing page. If a team is added, then all members of the team are added to the model with the specified permission (except for team-members with pre-existing access to the model, who retain previous access rights).</p> <h2>Editing teams</h2> <p>Teams can be edited by clicking on the link shown for each team, which shows the team as it is currently comprised. The edit page is similar to the create page in terms of functionality. One thing to note however is that changes to users in the team, i.e. adding or removing members does not affect permissions of models that have been given access to the team previously. Therefore, if permissions to a model are to be maintained on a team basis:</p> <p>When adding new users to an existing team: Please access the share page of the model in question and add the team to the model again (this is safe to repeat, as existing rights of users in the team will not be affected, and only new users will get added)</p> <p>When removing users to an existing team: Users must be manually removed from the collaborators.</p>
+            </div><!-- columns -->
+        </div><!-- maincontent -->
+
+        <footer>
+            <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+            <div id="local-footer">
+                <div class="row">
+                    <div class="small-12 medium-12 large-6 columns">
+                        Copyright &copy; <a href="//www.ebi.ac.uk/biomodels">BioModels</a>&nbsp;<script>document.write(new Date().getFullYear());</script>, all rights reserved.
+                    </div>
+                </div>
+            </div>
+            <!-- End optional local footer -->
+
+            <div id="global-footer">
+                <nav id="global-nav-expanded" class="row">
+                    <!-- Footer will be automatically inserted by footer.js -->
+                </nav>
+                <section id="ebi-footer-meta" class="row">
+                    <!-- Footer meta will be automatically inserted by footer.js -->
+                </section>
+            </div>
+        </footer>
+        </div> <!--! end of #wrapper -->
+    
+
+</div><!-- mainframe -->
+</div><!-- wrapper -->
+    <!-- declaration of javascript, jQuery being used -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true // default value
+        });
+        $(document).ready(function () {
+            $(".screenshot").each(function (i, obj) {
+                $(obj).attr("data-lightbox", "testPreview");
+            });
+        });
+    </script>
+</body>
+</html>

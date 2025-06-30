@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta content="About BioModels" about="https://wwwdev.ebi.ac.uk/biomodels" property="dc:title"> <meta name="ebi:localmasthead-color" content="#254146"> <meta name="ebi:localmasthead-image" content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/images/backgrounds/embl-ebi-background.jpg"/> <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch --> <link rel="dns-prefetch" href="//embl.de" /> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css"> <link rel="stylesheet" type="text/css" href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css"> <link rel="stylesheet" type="text/css" href="./css/biomodels/biomodels.css"> <link rel="stylesheet" type="text/css" href="./css/lightbox.css" > <title>BioModels Help</title> </head> <body> <div id="wrapper" class="container_24 page"> <div id="mainframe"> <div data-sticky-container class="sticky-container" > <div id="local-masthead" data-sticky data-sticky-on="large" data-top-anchor="165.75" data-btm-anchor="300000" class="sticky meta-background-color meta-background-image" data-resize="local-masthead" data-events="resize"> <header> <div class="masthead row"> <!-- local-title --> <div id="local-title" class="columns medium-12"> <div class="row" style="margin-top: -25px"> <div class="small-12 medium-6 large-6"> <h1> <a href="manual.html" title="Back to BioModels homepage"> <img src="./img/biomodels/logo_small.png" title="BioModels Homepage"/> <span style="color: #ffffff">BioModels</span> <sup><span class="icon icon-generic" data-icon=">"></span></sup></a> </h1> </div> </div> </div> </div> </header> </div> </div> <div id="maincontent" class="row"> <div class="small-12 medium-12 large-12 columns">
+<p>Models can be annotated with additional information. The annotation context is separated into different tabs.</p> <p>The annotations can be validated using the 'Validate' button. The outcome of the validation process is displayed on top of the screen. Figures 1 and 2 show that the model has been validated with errors.</p> <p><img alt="Annotation overview" src="img/biomodels/annotate1.png" title="Annotation overview" /></p> <p><img alt="Annotation -- Context of use tab" src="img/biomodels/annotate2.png" /></p> <p>The annotations can be saved using the 'Save' button. This generates a metadata file in RDF which can be viewed and downloaded from the <strong>Files</strong> tab in the <a href="model_display.html">model display</a> page. Please note that annotations are also validated when they are saved. A model's validation status can be viewed in the <strong>Overview</strong> tab of the <a href="model_display.html">model display</a> page.</p> <p>'Return to model display page' takes users back to the <a href="model_display.html">model display</a> page.</p>
+            </div><!-- columns -->
+        </div><!-- maincontent -->
+
+        <footer>
+            <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+            <div id="local-footer">
+                <div class="row">
+                    <div class="small-12 medium-12 large-6 columns">
+                        Copyright &copy; <a href="//www.ebi.ac.uk/biomodels">BioModels</a>&nbsp;<script>document.write(new Date().getFullYear());</script>, all rights reserved.
+                    </div>
+                </div>
+            </div>
+            <!-- End optional local footer -->
+
+            <div id="global-footer">
+                <nav id="global-nav-expanded" class="row">
+                    <!-- Footer will be automatically inserted by footer.js -->
+                </nav>
+                <section id="ebi-footer-meta" class="row">
+                    <!-- Footer meta will be automatically inserted by footer.js -->
+                </section>
+            </div>
+        </footer>
+        </div> <!--! end of #wrapper -->
+    
+
+</div><!-- mainframe -->
+</div><!-- wrapper -->
+    <!-- declaration of javascript, jQuery being used -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true // default value
+        });
+        $(document).ready(function () {
+            $(".screenshot").each(function (i, obj) {
+                $(obj).attr("data-lightbox", "testPreview");
+            });
+        });
+    </script>
+</body>
+</html>
