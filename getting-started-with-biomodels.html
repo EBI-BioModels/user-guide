@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="About BioModels"
+          about="https://wwwdev.ebi.ac.uk/biomodels" property="dc:title">
+    <meta name="ebi:localmasthead-color" content="#254146">
+    <meta name="ebi:localmasthead-image"
+          content="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/images/backgrounds/embl-ebi-background.jpg"/>
+    <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch -->
+    <link rel="dns-prefetch" href="//embl.de"/>
+    <link rel="stylesheet" type="text/css"
+          href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/libraries/foundation-6/css/foundation.css">
+    <link rel="stylesheet" type="text/css"
+          href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/ebi-global.css">
+    <link rel="stylesheet" type="text/css"
+          href="//www.ebi.ac.uk/web_guidelines/EBI-Icon-fonts/v1.1/fonts.css">
+    <link rel="stylesheet" type="text/css"
+          href="//www.ebi.ac.uk/web_guidelines/EBI-Framework/v1.1/css/theme-embl-petrol.css">
+    <link rel="stylesheet" type="text/css" href="./css/biomodels/biomodels.css">
+    <link rel="stylesheet" type="text/css" href="./css/lightbox.css">
+    <style>
+        .toc-box {
+            background-color: lavender; border: 0.01em solid grey;
+            padding: 20px; margin: auto; line-height: 135%;
+        }
+        .toc {
+            line-height:  200%;
+        }
+        ul.security-checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.security-checklist li {
+            margin-bottom: 0.5em;
+        }
+        ul.security-checklist li::before {
+            content: '\00BB \0020';
+        }
+        .benefits-2fa-list dt {
+            color: #0078a6;
+            font-weight: bold;
+        }
+    </style>
+    <title>Getting Started with BioModels | User Manual</title>
+</head>
+<body>
+<div id="wrapper" class="container_24 page">
+    <div id="mainframe">
+        <div data-sticky-container class="sticky-container">
+            <div id="local-masthead" data-sticky data-sticky-on="large" data-top-anchor="165.75"
+                 data-btm-anchor="300000" class="sticky meta-background-color meta-background-image"
+                 data-resize="local-masthead" data-events="resize">
+                <header>
+                    <div class="masthead row"> <!-- local-title -->
+                        <div id="local-title" class="columns medium-12">
+                            <div class="row" style="margin-top: -25px">
+                                <div class="small-12 medium-6 large-6"><h1><a href="manual.html"
+                                                                              title="Back to BioModels homepage"> <img
+                                        src="./img/biomodels/logo_small.png" title="BioModels Homepage"/> <span
+                                        style="color: #ffffff">BioModels</span> <sup><span class="icon icon-generic"
+                                                                                           data-icon=">"></span></sup></a>
+                                </h1></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div id="maincontent" class="row">
+            <div class="small-12 medium-12 large-12 columns">
+                <h2>Getting started with BioModels</h2>
+                <p>Welcome to BioModels user manual page! We'll show you all the basics to get you up and work with
+                BioModels. When you're ready to go beyond the basics, check out the other links to explore more
+                    features.</p>
+                <div id="toc" class="toc-box">
+                    <strong>Table of Contents</strong>
+                    <ul class="toc">
+                        <li><a href="#general-rules-for-usernames-and-passwords">General rules for usernames and
+                            passwords</a></li>
+                        <ul class="security-checklist">
+                            <li><a href="#username-requirements">Username requirements</a></li>
+                            <li><a href="#password-requirements">Password requirements</a></li>
+                        </ul>
+                        <li><a href="#enhance-account-security-settings">Enhancements of account security settings</a></li>
+                        <ul class="security-checklist">
+                            <li><a href="#lock-account-after-failed-password-attempts">
+                                Lock accounts after failed password attempts</a></li>
+                            <li><a href="#password-compromised">
+                                Check and remind if your password was compromised</a></li>
+                            <li><a href="#2fa">Turn Two-Factor Authentication (2FA) on or off</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <h3 id="general-rules-for-usernames-and-passwords"
+                    style="margin-top: 20px">General rules for usernames and passwords</h3>
+                <p>When opening an account in BioModels repository, you are required to choose a
+                    username and are sent a temporary password via the confirmation email. Usernames
+                    and passwords must match the conventions set by BioModels. To make sure that your username and
+                    password are
+                    accepted, follow the guidelines below.</p>
+                <h4 id="username-requirements">Username requirements</h4>
+                <p>Your username can be any combination of letters, numbers and these symbols (underscores, dots and
+                    hyphens). The
+                    username must match with this regular expression <code>/^[a-zA-Z0-9_.-]{4,64}$/g</code>.</p>
+                <ul>
+                    <li>Usernames can be between 4 and 64 characters in length.</li>
+                    <li>Usernames may contain any of the following: letters (a - z or A - Z), numbers (0 - 9), dashes
+                        (-), underscores
+                        (_), hyphens (-), and periods (.).
+                    </li>
+                    <li>Usernames may not contain any of the following; ampersands (&), equal signs (=), brackets (< >),
+                        plus signs (+),
+                        commas (,), or more than one period (.) in a row.
+                    </li>
+                    <li>Usernames may not begin or end with a period (.), nor can a period (.) be the only character.
+                    </li>
+                    <li>Letters in usernames must be lowercase. If you enter uppercase letters when creating a username,
+                        they are converted to lowercase letters.</li>
+
+                </ul>
+
+                <h4 id="password-requirements">Password requirements</h4>
+                <p>Your password can be any combination of letters, numbers, and symbols (ASCII-standard characters
+                    only). Accents and accented characters aren't supported.</p>
+                <p>You cannot use a password that:</p>
+                <ul>
+                    <li>It is particularly week. For example: "admin123"</li>
+                    <li>You've used before on your account.</li>
+                    <li>It starts or ends with a blank space.</li>
+                </ul>
+
+                <h3 id="enhance-account-security-settings">Enhancements of account security settings</h3>
+                <h4 id="lock-account-after-failed-password-attempts">Lock accounts after failed password attempts</h4>
+                <p>By limiting the number of failed login attempts, the risk of unauthorized system access via user
+                    password guessing, also known as brute-forcing, is reduced. We have implemented the smart lockout
+                    policy. By default, smart lockout locks an account from login after 3 failed password attempts.</p>
+                <h5>
+                    <blockquote style="color: #47C965">The lock lasts about an hour and will then clear on its own.</blockquote>
+                </h5>
+                <p>If the lock does not clear after an hour, please contact us for further support.</p>
+
+                <h5>Why does X lock accounts?</h5>
+                <p>BioModels limits the number of times that someone can try signing in to an account for security
+                    reasons. We
+                    don't want to give hackers unlimited attempts at guessing your password. So, we block them from
+                    trying after a while.</p>
+
+                <h4 id="password-compromised">Check and remind if your password was compromised</h4>
+                <p>When you create and store your own passwords in BioModels, it automatically identifies common
+                    weaknesses (for example, if they're easily guessed or used multiple times). BioModels can also
+                    securely monitor your passwords and alert you via either sending an email or pushing a
+                    notification to your profile's <strong>Notifications</strong> section if they appear in known data
+                    leaks.</p>
+                <p>BioModels will perform a password check when any user logs in the system. You cannot stop our
+                    system from sending alerts unless you reset your current password.</p>
+
+                <h4 id="2fa">Turn Two-Factor Authentication (2FA) on or off</h4>
+                <p>Two-factor authentication (2FA) is an identity and access management security method that requires
+                    two steps of identification to access resources and data. 2FA gives BioModels platform the
+                    ability to monitor and help safeguard their most vulnerable information and networks.</p>
+                <h5>The Benefits of 2FA</h5>
+                <dl class="benefits-2fa-list">
+                    <dt>Enhanced security</dt>
+                    <dd>Probably the most important benefit of 2FA is to provide an additional layer of
+                        security. Even if a hacker obtains the password/login credentials of a user,
+                        they still cannot access the data without a second factor of authentication.
+                        This makes it hard for (cyber)criminals to hack into sensitive information and
+                        protects the data from unauthorized access.</dd>
+                    <dt>Reduce Risk of Fraud & Data Breaches</dt>
+                    Data breaches have serious consequences for businesses: reputation damage, legal
+                    liabilities and even financial losses. But luckily, the days of being able to crack
+                    a simple password and gain access to privileged information are over. As stated above,
+                    the enhanced security makes the life of a hacker much harder. Not only to protect
+                    individual user data, but also lowering the risk of a (large) data breach significantly.</dd>
+                    <dt>Achieve Compliance</dt>
+                    <dd>Some industries require specific compliance measures, such as GDPR and HIPAA.
+                        Health, finance, and government entities demand that businesses follow strict
+                        guidelines that protect consumers’ rights and mitigate risk. Make sure you
+                        consider your business' unique needs when determining your security requirements.</dd>
+                    <dt>Increase Customer Trust</dt>
+                    <dd>Customers like knowing their data is secure. Even though additional verification
+                        steps can seem annoying and unnecessary at times, customers trust and appreciate
+                        businesses who take precautions to protect them seriously.</dd>
+                    <dt>Reduce Operating Costs</dt>
+                    <dd>2FA helps reduce the occurrence of fraud, and thus frees time for the help desk
+                        to focus on more complex customer service issues. But that's not all! Compared
+                        to other security measures (biometric authentication or physical security tokens),
+                        2FA is relatively low-cost and easy to implement. This makes it a practical and
+                        cost-effective option for businesses of all sizes, including small and medium-sized
+                        enterprises.</dd>
+                    <dt>Increase Flexibility</dt>
+                    <dd>There are many different types of 2FA solutions available, on a variety of different
+                        messaging channels. This means that you can choose the option that best suits your
+                        customer's needs, your security requirements, your budget, and your IT infrastructure.</dd>
+                </dl>
+                <h5>Authentication methods for 2FA</h5>
+                <p>There are different authentication methods when using two-factor authentication. Currently, we
+                    only support users <strong>getting OTP codes for 2FA via email</strong>.</p>
+                <h5>Trust this device for 30 days</h5>
+                <p>To enhance your login experience and reduce interruptions, we've also introduced a new <strong>Trust
+                        This
+                    Device for 30 Days</strong> feature during the 2FA process.</p>
+                <p style="font-weight: bold">Key Benefits:</p>
+                <ul>
+                    <li>Users can now choose to recognize their regularly used devices for 30 days, minimizing the need
+                           for
+                        repeated 2FA prompts on those devices.</li>
+                    <li>This feature improves workflow efficiency, especially during busy periods when frequent
+                    authentication might slow down user activities.</li>
+                    <li>Users can view and manage their trusted devices directly through the user profile page, giving
+                           full control over which devices are recognized as trusted.
+                </li>
+                    <p>By enabling this option during login, you can enjoy a smoother, more efficient authentication
+                        experience on your trusted devices.</p>
+                </ul>
+
+            </div>
+        </div>
+        <footer>
+            <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+            <div id="local-footer">
+                <div class="row">
+                    <div class="small-12 medium-12 large-6 columns">
+                        Copyright &copy; <a href="//www.ebi.ac.uk/biomodels">BioModels</a>&nbsp;<script>document.write(new Date().getFullYear());</script>
+                        , all rights reserved.
+                    </div>
+                </div>
+            </div>
+            <!-- End optional local footer -->
+
+            <div id="global-footer">
+                <nav id="global-nav-expanded" class="row">
+                    <!-- Footer will be automatically inserted by footer.js -->
+                </nav>
+                <section id="ebi-footer-meta" class="row">
+                    <!-- Footer meta will be automatically inserted by footer.js -->
+                </section>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- declaration of javascript, jQuery being used -->
+<script src="./js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+        'fitImagesInViewport': true // default value
+    });
+    $(document).ready(function () {
+        $(".screenshot").each(function (i, obj) {
+            $(obj).attr("data-lightbox", "testPreview");
+        });
+    });
+</script>
+</body>
+</html>
